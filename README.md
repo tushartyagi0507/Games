@@ -1,2 +1,2 @@
 # React
-This is a repo which has games like Tic Tac Toe and Rock, paper, scissors
+<p>This repo has all the codes and notes for the React taught by Akshay Saini in his course Namaste React</p>
