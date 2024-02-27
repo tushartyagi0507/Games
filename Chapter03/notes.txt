@@ -1,0 +1,67 @@
+You just have to run #npx parcel index.html (give the relative path of your index.html here)
+this will host the file on the localhost:1234 using parcel and will open the code in development mode 
+
+-------------------------------------------------------------------------------------------------------
+NOTE: we have added below in our package.json so that we do not have to run this 
+npx parcel index.html again and again everytime we want the parcel to come into play
+
+"start": "parcel index.html",  > this one will help in calling the parcel index.html 
+"build": "parcel build index.html", > this one helps you in building the project before putting into prodcution 
+
+you can run #npm start <srciptname> which is start in our case it will open the project in development mode
+run #npm run build
+
+--------------------------------------------------------------------------------------------------------
+
+// JSX > JS syntax which is easy to creat React element 
+// JSX is not HTML, it is diff from HTML it is just like HTML like syntax 
+
+const jsxHeading = <h1 id="jsxHeading">this is JSX </h1>
+/* the above line is not a proper JS code and this cannot be understood by the JS engine but still we see 
+ in console is bcz of parcel (which transpilled(that means coverted into which JS enginer can understand)
+ before it reaches the JS) and Parcel does it using module which is node_module called "Babel"*/
+
+ Babel:
+ > Babel is a JS compiler 
+ > a library which converts the JSX into JS code so that JS engine can understand
+ > also helps in transpilling the code written in new ES6 which old browsers cannot understand
+
+ # JSX =>(using Babel) React.createElement => ReactElement- JS object => HTML element ( using render)
+
+       => in JSX you have to use className in place of class
+       => Always use camel case while giving the attributes 
+       => if JSX statement is of single line then it is fine it if it of multiple line put it inside ()
+       => if you put {} inside JSX code then you run any JS code inside those {}
+
+NOTE: Remember a react element is after all a variable so you can just use variable name while putting 
+a react element inside another React element 
+---------------------------------------------------------------------------------------------------------
+
+React Component : There are two types called class based component and functional component
+
+1. React functional component : it is just a JS function which returns a JSX code 
+                              : u have to use Cap letter for the first letter in the name to make React understand that it is a funcitonal component
+                              : in other words a JS function that will return a React element ( bcz JSX is
+                               transpilled to React element only)
+                              : if there is only one line code then you can use ()=> true
+                              (that means u can avoid return and braces if it's one line code in arrow function)
+
+Eg: const Heading = ()=>{
+    return <h1>..</h1>;
+}
+
+eg: const heading = ()=>(
+    <div class="container">
+        <h1 id="heading"></h1>
+    </div>
+)
+// try to understand this syntax we have not used braces and niether return keyword bcz this function 
+shall return the JSX code which is written and that is wrapped inside () as it is a multi line JSX code
+
+
+# if you want to render the functional component inside the root then you cannot just do 
+# root.render(Heading)
+# you have to let the Babale know that this is a functional component and not normal React element 
+
+root.render(<Heading/>) or <Heading></Heading> // this will render the Heading (functional component inside your React root)
+--------------------------------------------------------------------------------------------------------
