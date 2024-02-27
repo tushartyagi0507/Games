@@ -33,6 +33,8 @@ const jsxHeading = <h1 id="jsxHeading">this is JSX </h1>
        => if JSX statement is of single line then it is fine it if it of multiple line put it inside ()
        => if you put {} inside JSX code then you run any JS code inside those {}
 
+NOTE: Remember a react element is after all a variable so you can just use variable name while putting 
+a react element inside another React element 
 ---------------------------------------------------------------------------------------------------------
 
 React Component : There are two types called class based component and functional component
@@ -61,5 +63,5 @@ shall return the JSX code which is written and that is wrapped inside () as it i
 # root.render(Heading)
 # you have to let the Babale know that this is a functional component and not normal React element 
 
-root.render(<Heading/>)  // this will render the Heading (functional component inside your React root)
+root.render(<Heading/>) or <Heading></Heading> // this will render the Heading (functional component inside your React root)
 --------------------------------------------------------------------------------------------------------
