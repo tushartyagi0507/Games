@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0;
@@ -5,4 +6,13 @@
 
 #heading{
     color:red;
+=======
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#heading{
+    color:red;
+>>>>>>> 0779135cf4f0c8887deef9f1e21170d7aaffe7d5
 }
