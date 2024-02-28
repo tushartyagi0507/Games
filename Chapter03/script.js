@@ -13,6 +13,7 @@ const jsxHeading = <h1 id="jsxHeading">this is JSX </h1>
  before it reaches the JS) and Parcel does it using module which is node_module called "Babel"*/
 
 root.render(jsxHeading);    
+console.log(jsxHeading)  // this JSX is also a JS object
 
 //NOTE: here jsxHeading is also an object and would console the same as heading object 
 
@@ -39,7 +40,9 @@ shall return the JSX code which is written and that is wrapped inside () as it i
 
 // how to put component inside the other component which is also called component composition 
 
-const Title = ()=> <h1>This is the Title </h1>
+const Title = ()=> (
+<h1>This is the Title </h1>
+);
 
 // now you can just write this title inside the Heading funcitonal component like below I am commenting it 
 // else it would throw error because we have already used the Heading before 
@@ -47,17 +50,20 @@ const Title = ()=> <h1>This is the Title </h1>
 // Also if you put {} inside JSX code then you run any JS code inside those {}
 // using this concept you can put a React element inside the JSX code 
 
-const name = <h3>Tushar Tyagi</h3> // I have taken one React element for example
+const name = <h3>Tushar Tyagi</h3> // I have taken one React element(JSX) for example
 
-const Heading = ()=>(   // first capital letter should be capital 
-<div className="container">    
-<Title/>      
-{}                  
-    <h1 id="heading">This is a functional component</h1>
+const HeadingComponent = ()=>(
+    <div class="main">
+        <Title></Title>
+        <Title/>
+        {Title()}
+        {name}
+    <h1 id="para">This is H1 inside the functional component</h1>
 </div>
-)
+);
 
-// root.render(<Heading/>)  //or  
-root.render(<Heading></Heading>) 
+root.render(<HeadingComponent/>) 
+
+ //or  
+// root.render(<Heading></Heading>) 
 // or since Heading is at the end of the day it is a JS function so you can also 
-// root.render(Heading())
