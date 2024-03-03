@@ -67,9 +67,4 @@ root.render(<HeadingComponent/>)
  //or  
 // root.render(<Heading></Heading>) 
 // or since Heading is at the end of the day it is a JS function so you can also 
-
-// root.render(<Heading/>)  //or  
-root.render(<Heading></Heading>) 
-// or since Heading is at the end of the day it is a JS function so you can also 
-// root.render(Heading())
-
+            
