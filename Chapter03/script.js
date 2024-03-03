@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from "react";
 import ReactDOM from "react-dom/client";
 
@@ -68,7 +67,7 @@ root.render(<HeadingComponent/>)
  //or  
 // root.render(<Heading></Heading>) 
 // or since Heading is at the end of the day it is a JS function so you can also 
-=======
+            
 import React from "react";
 import ReactDOM from "react-dom/client";
 
@@ -132,4 +131,4 @@ const Heading = ()=>(   // first capital letter should be capital
 root.render(<Heading></Heading>) 
 // or since Heading is at the end of the day it is a JS function so you can also 
 // root.render(Heading())
->>>>>>> 0779135cf4f0c8887deef9f1e21170d7aaffe7d5
+
