@@ -1,0 +1,133 @@
+#NPM 
+> it does not have a fullform ( it is a package manager for Node JS )
+> when you create a react app it already has npm in it 
+> Once we run the commands to include the npm in terminal like #npm init 
+ it creates one package.json file which is a config file for the npm 
+ 
+Package Managers: 
+-----------------
+
+The Organizers of Your Development Tools:
+
+Imagine you're building a house. You wouldn't just go to the nearest hardware store and try to find every 
+single screw, nail, and piece of lumber you need. It would be chaotic and time-consuming. Instead, you'd 
+rely on a well-organized store with different departments and efficient search options.
+
+This is where package managers come in for software development. They are essentially tools that act like 
+those well-organized stores, helping you manage the various software components (called packages) you need
+for your projects.
+
+Here's why package managers are essential:
+
+1. Finding the Right Tools: When building software, you often need to use tools and libraries developed by 
+others. Package managers provide a centralized repository where you can search for specific packages based
+ on their name, functionality, or keywords. This saves you the hassle of manually searching the internet 
+ for the right ones.
+
+2. Simplified Installation: Once you find the package you need, the package manager takes care of the 
+download and installation process. This eliminates the need for manual downloads, extraction, and 
+configuration, making it faster and easier to get started with the tools you need.
+
+3. Managing Dependencies: Many packages rely on other packages to function properly (these are called 
+dependencies). Package managers ensure that all necessary dependencies are automatically installed and 
+configured along with the main package. This prevents compatibility issues and ensures your project has 
+everything it needs to work correctly.
+
+4. Version Control: Package managers allow you to specify the exact version of each package you want to use 
+in your project. This ensures consistent behavior and helps avoid any issues arising from unforeseen 
+changes in later versions. You can also easily update packages to newer versions when necessary, following
+ the same streamlined process.
+
+Different Types of Package Managers:
+
+npm (Node Package Manager): The most common package manager for Node.js projects, widely used in various
+ web development and server-side applications.
+
+package.json file > 
+
+# most imp package we have is bundler (our whole code needs to be minimized, cleaned and bundled together)
+eg- web pack, parcel, wheat all these are examples of bundler 
+
+we will have to install this dependancy(package) called parcel since we have already installed npm so lets 
+do it 
+
+NOTES:
+There are two types of dependancies 1. Dev dependancy and 2. General or normal dependancy 
+we need Dev dependancy becuase it helps in time of developing the app 
+
+"parcel": "^2.11.0"  > this in package.json file represents the version of the parcel and the symbol 
+^ this means that any minor upgrade in the version will be upgrades automatically 
+while if you put ~ in place of ^ that would do automatic major upgrade means from 2.11 to new 3.0.x family 
+
+#package-lock.json > keeps the track of the version and it also tells you about the 
+actual version of the parcel while the parcel.json has the version along with either 
+^ or ~ (that means it gives you the approx version with upgrade)
+
+Question : What is transit dependancy ?
+
+Answer: the other dependancies(libraries) which were installed inside the node modules along with the parcel is 
+bcz the main code depends on parcel and the parcel further depends on these other dependancies
+
+Also all other dependancies inside node modules have their own package.json file 
+
+
+NOTE: if you have package.json and package-lock.json file you can always recreate the node_modules 
+ you just have to run #npm install on your terminal 
+ #npm install would just check the package.json and will install all the required dependancies which are 
+ there in the package.jsona along with their respective dependancies
+
+
+ #npx > this is the command to execute the package 
+
+ 
+Normal Dependencies vs. Dev Dependencies: 
+-----------------------------------------
+Understanding npm install Flags
+When working with Node.js projects, you often need to manage various software components called packages. This is where npm install comes in, allowing you to install and manage these packages in your project. However, npm install offers additional flags to specify different types of dependencies:
+
+1. Normal Dependencies:
+
+Installed using the command npm install <package-name>.
+
+What they are: These are packages essential for the final running version of your application. They are 
+included in your project and deployed to production environments.
+
+Examples: Libraries for database access, server-side functionality, or core application logic.
+
+2. Dev Dependencies:
+
+Installed using the command npm install <package-name> -D (the -D flag signifies dev dependency).
+
+What they are: These are packages needed for development and testing purposes only. They are not included 
+in the final deployed version of your application.
+
+Examples: Testing frameworks (like Jest), code linters (like ESLint), development servers (like Webpack 
+Dev Server), or build tools (like Babel).
+Why this distinction is important:
+
+Reduces production bundle size: By excluding dev dependencies from the final build, you keep the size of 
+your application smaller and more efficient for deployment.
+Clear separation of concerns: It clearly separates the runtime dependencies (needed for the application 
+to run) from development tools (used during development).
+
+Pacel(bundler)
+> Reduces HTTP request and improves the loading time 
+> gives you Local server
+> HMR ( Hot Module Replacement) > replaces the text in just no time as soon as you save the file changes will 
+be made in the web app 
+> File Watching Algorithms - written in C++
+> Caching- Faster builds 
+> Image optimizaiton 
+> Minification 
+> Bundling all the imp files and assets 
+> Compress 
+> consistent Hashing 
+> Code splitting 
+> Differential Bundling - support older browsers 
+> Diagnostics 
+> Better Error handling 
+> HTTPs 
+> Tree shaking - remove unused code  
+
+#browserslist > this means that your app will definitely work on the given specific 
+browsers 
