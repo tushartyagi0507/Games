@@ -1,7 +1,8 @@
 {
-  "name": "react",
+  "name": "foodapp",
   "version": "1.0.0",
-  "description": "This is namaste react course by Akshay ",
+  "description": "FoodApp building",
+  "main": "index.js",
   "scripts": {
     "test": "jest"
   },
@@ -9,19 +10,24 @@
     "type": "git",
     "url": "git+https://github.com/tushartyagi0507/React.git"
   },
-  "keywords": [],
-  "author": "Tushar and Akshay",
+  "keywords": [
+    "react",
+    "learning",
+    "React"
+  ],
+  "author": "Akshay and Tushar",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/tushartyagi0507/React/issues"
   },
   "homepage": "https://github.com/tushartyagi0507/React#readme",
-  "devDependencies": {
-    "parcel": "^2.11.0",
-    "process": "^0.11.10"
-  },
   "dependencies": {
+    "parcel": "^2.12.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.3"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
   }
 }

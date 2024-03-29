@@ -1,0 +1,235 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    margin-top: 10px;
+    padding: 5px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid transparent;
+    /* background-color: aliceblue; */
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.name{
+    font-size: 2rem;
+}
+.name_logo{
+    /* margin: 5px 0px 5px 0px; */
+    display: flex;
+    gap: 10px;
+    /* margin-top:5px; */
+    align-items: center;
+}
+
+.name_logo > h3{
+    font-size: 40px;
+    font-weight: bold;
+}
+.logo{
+    height: 70px;
+}
+
+.nav > ul{
+    display: flex;
+}
+
+.nav > ul > li{
+    list-style-type: none;
+    padding: 0px 1.25rem;
+    font-size: 1.25rem;
+    font-weight: bolder;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav > ul > li > Link
+{
+    text-decoration: none;
+}
+
+.login{
+    border: transparent;
+    background-color: white;
+    color: yellowgreen;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer; 
+    position: relative;
+    bottom: 0.10rem;
+}
+
+.onlineStatus{
+    position: relative;
+    bottom: 0.36rem;
+}
+
+.body-top{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0px;
+}
+
+.search{ height: 40px;
+    margin-left: 5px;
+    padding: 8px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+.searchbar{
+    box-sizing: border-box;
+    height: 40px;
+    width: 500px;
+    padding-left: 14px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.filters{
+    display: flex;
+}
+
+.filters > button {
+    border: 1px solid rgb(207, 207, 207);
+    color: rgb(156, 156, 156);
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(54, 54, 54, 0.06) 0px 1px 2px;
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+    margin-left: 0.8rem;
+}
+.cardholder{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 58px; 
+    padding: 0px 10%;
+}
+
+.card{
+    /* box-sizing: content-box; */
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    padding: 3px;  
+
+} 
+
+/* .dish_image{
+    height: 167px;
+    width: 250px;
+    position: absolute;
+} */
+.dish_logo{
+    position: absolute;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    border-radius: 20px;
+    position: relative;
+
+}
+
+.card-content{
+    margin:5px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.card:hover{
+    cursor: pointer;
+    border: 2px solid transparent;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.oneLine{
+    display: flex;
+    gap: 0.4em;
+}
+
+.shimmer{margin-top: 2rem;}
+
+.shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10%;
+}
+.shimCard{
+    height: 430px;
+    width: 250px;
+    background-color: #f0f0f0; 
+    margin: 20px;
+}
+
+.shimmer-top{display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin:auto;
+justify-content: space-around;
+}
+
+.shimmer-buttons{
+    width: 5rem;
+    height: 2.5rem;
+    background-color: #f0f0f0;
+    margin-left: 0.8rem;
+}
+
+.shimmer-bar{
+    height: 2.5rem;
+    width: 30rem; 
+    background-color: #f0f0f0;
+}
+
+.error-page{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+.error{
+    background-color: white;
+    height: 40rem;
+    width: 70rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.error-image{height: 20rem;}
+
+.back{
+    padding: 0.5rem;
+    width: 8rem;
+    background-color: red;
+    color: black;
+    font-size: large;
+    margin-left: 20rem;
+    cursor: pointer;
+}
+
+.adj{display: flex;
+flex-direction: column;
+justify-content: space-evenly;}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+.menu_items > li {
+    text-decoration:solid;
+    color:red;
+}
+
+.offline{
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    color:red;
+}
