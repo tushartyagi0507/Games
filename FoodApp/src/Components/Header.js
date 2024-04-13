@@ -2,6 +2,8 @@ import { useState } from "react";
 import { LOGO_URL } from "../utils/const";
 import {Link} from "react-router-dom";
 import useonlineStatus from "../utils/useonlineStatus"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons"
 
 
 const Header = () => {
@@ -21,7 +23,7 @@ const Header = () => {
             <li><Link to="/" className="mx-4">Home</Link></li>
             <li><Link to="/Contact" className="mx-4">Contact Us</Link></li> 
             <li><Link to="/About" className="mx-4">About Us</Link></li> 
-            <li><Link to="/Cart" className="mx-4">Cart</Link></li>
+            <li><Link to="/Cart" className="mx-4"><FontAwesomeIcon icon={faCartShopping} /></Link></li>
             <li><button className="mx-4 text-yellow-500" onClick={()=>{
               if(loginBtn==="LogIn")setloginBtn("Logout")
               else setloginBtn("LogIn")
