@@ -8,15 +8,19 @@ import Contact from "./Contact.js";
 import Error from "./Error.js";
 import RestaurantMenu from "./RestaurantMenu.js";
 import Cart from "./Cart.js";
+import { Provider } from "react-redux";
+import Store from "../utils/Store.js";
 
 const root = ReactDOM.createRoot(document.querySelector(".root"));
 
 const App = () => {
   return (
-    <div className="app">
+ <Provider store={Store}>
+     <div className="app">
       <Header />
       <Outlet/>
     </div>
+ </Provider>
   );
 };
 
