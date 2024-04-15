@@ -9,7 +9,7 @@ const Body = () => {
   const [listofRestaurants, setlistofRestaurants] = useState([]);
   const [filteredRestaurants, setfilteredRestaurants] = useState([]);
   // this is destructruing of the array which is returned by useState(),
-  console.log(listofRestaurants);
+  // console.log(listofRestaurants);
 
   const [searchtext, setsearchtext] = useState([]);
 
@@ -25,11 +25,11 @@ const Body = () => {
         "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.96340&lng=77.58550&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
       );
       const jsonData = await data.json();
-      console.log(jsonData);
-      console.log(
-        jsonData?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
-          ?.restaurants
-      );
+      // console.log(jsonData);
+      // console.log(
+      //   jsonData?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
+      //     ?.restaurants
+      // );
       setlistofRestaurants(
         jsonData?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
           ?.restaurants

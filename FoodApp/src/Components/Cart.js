@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux"
-import ItemList from "./ItemList"
+import CartItems from "./CartItems"
 import { clearCart } from "../utils/Redux Slices/CartSlice"
 
 const Cart = ()=>{
@@ -17,7 +17,7 @@ const handlerClear = ()=>{
             <h1 className="font-bold text-2xl my-8">Cart</h1>
             <div className="w-6/12 mx-auto">
             {List.map((list)=>{
-                return (<ItemList item={list} key={list?.card?.info?.id }/>)
+                return (<CartItems item={list} key={list?.card?.info?.id }/>)
             })}
              { List.length === 0 && (<h1 className="text-center">The Cart is empty. Please add items before you check out </h1>) }
             <button className="bg-blue-500 text-white text-bold rounded-lg p-2 m-4"

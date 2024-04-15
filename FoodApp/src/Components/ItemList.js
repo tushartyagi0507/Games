@@ -16,7 +16,7 @@ const ItemList = (props) => {
   return (
     <div className="mb-6 border-b-2 border-gray-300 pb-4 ">
       <div className="flex justify-between">
-        <div className="flex-col w-9/12">
+        <div className="flex-col w-9/12 pl-2">
           <div className="font-bold text-md">{name}</div>
           <div className="font-bold">₹{defaultPrice / 100 || price / 100}</div>
           <p className="tex-color-gray-300 mt-2">{description}</p>

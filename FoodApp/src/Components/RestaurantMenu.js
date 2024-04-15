@@ -12,7 +12,7 @@ const {resId} = useParams();
 const [showIndex, setshowIndex] = useState(null)
 
   let resInfo = useRestaurantMenu(resId);
-  console.log(resInfo?.cards[2]?.card?.card?.info)
+  // console.log(resInfo?.cards[2]?.card?.card?.info)
   if (resInfo === null) <ShimmerContainer />;
   else {
     const { name, cloudinaryImageId, costForTwoMessage, cuisines,avgRatingString, totalRatingsString} =
