@@ -60,12 +60,12 @@ const Body = () => {
             className="text-neutral-400 border-solid border-2 border-slate-300 shadow-md px-2 rounded-md text-sm"
             onClick={() => {
               let filteredList = listofRestaurants.filter((res) => {
-                return res.info.avgRating >= 4.5;
+                return res.info.avgRating >= 4.0;
               });
               setfilteredRestaurants(filteredList);
             }}
           >
-            Ratings 4.4+
+            Ratings 4.0+
           </button>
           <button className="text-neutral-400 border-solid border-2 border-slate-300 shadow-md px-2 rounded-md text-sm"
             onClick={() => {

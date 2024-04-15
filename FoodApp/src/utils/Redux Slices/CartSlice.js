@@ -7,13 +7,17 @@ const CartSlice = createSlice({
     },
     reducers:{
         addItem: (state,action)=>{
-      return ( state.items.push(action.payload))
+    state.items.push(action.payload)  // do not use return statement as either you should return a new state let the immer library mute the state for you 
         },
        removeItem: (state,action)=>{
-        return (state.items.filter( (it)=> it.id != action.payload.id ))// so it will filter out the item from the items which you wish to delete 
+     state.items.filter( (it)=> it.id !== action.payload.id )// so it will filter out the item from the items which you wish to delete 
        },
        clearCart: (state)=>{
-       return (state.items.lenght = 0)
+       state.items.length = 0
        }
     }
 })
+//we will export two things from here one is our reducer and the other are our actions 
+
+export const {addItem, removeItem, clearCart} = CartSlice.actions;
+export default CartSlice.reducer;

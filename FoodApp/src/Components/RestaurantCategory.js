@@ -4,7 +4,7 @@ import ItemList from "./ItemList"
 import { useState } from "react"
 
 const RestaurantCategory = (props)=>{
-    console.log("props:", props) // checking the props which we took 
+    // console.log("props:", props) // checking the props which we took 
 
 // desturcturing of the props 
 const {isShow, setshowIndex} = props;
