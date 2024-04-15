@@ -9,11 +9,11 @@ const RestoCard = (props) => {
   const { name, cloudinaryImageId, cuisines, avgRating,totalRatingsString } = resdata?.info;
 
 return (
-    <div className="w-[250px] h-[270px] shadow-sm overflow-visible hover:border-2 border-solid border-transparent
-    hover:shadow-md rounded-lg">
+    <div className="w-[250px] h-[270px] shadow-lg overflow-visible hover:border-2 border-solid border-transparent
+    hover:shadow-md rounded-lg px-2">
         <img
           alt="dish_logo"
-          className="w-[250px] h-[170px] rounded-lg bg-cover overflow-hidden"
+          className="w-[250px] h-[170px] rounded-lg bg-cover overflow-hidden pt-2"
           src={CDN_URL + cloudinaryImageId}
         />
   
