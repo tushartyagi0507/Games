@@ -10,6 +10,7 @@ import RestaurantMenu from "./RestaurantMenu.js";
 import Cart from "./Cart.js";
 import { Provider } from "react-redux";
 import Store from "../utils/Store.js";
+import Footer from "./Footer.js"
 
 const root = ReactDOM.createRoot(document.querySelector(".root"));
 
@@ -19,6 +20,7 @@ const App = () => {
      <div className="app">
       <Header />
       <Outlet/>
+      <Footer/>
     </div>
  </Provider>
   );

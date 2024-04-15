@@ -14,6 +14,10 @@ const Header = () => {
 
   // using the selector login here, sunbscribing to the Redux store 
 
+const handlerLoad = ()=>{
+  window.location.reload()
+}
+
   const cartItems = useSelector((Store)=> Store.cart.items)
     return (
       <div className="flex justify-between items-center shadow-md">
@@ -22,7 +26,7 @@ const Header = () => {
             className="w-20 m-4"
             src={LOGO_URL}
           />
-         <Link to="/" className="text"><h3 className="font-bold text-2xl text-red-600 font-serif">FoodMania</h3></Link> 
+        <h3 className="font-bold text-2xl text-red-600 font-serif cursor-pointer" onClick={handlerLoad}>FoodMania</h3>
         </div>
         <div className="nav">
           <ul className="flex justify-center items-center text-lg font-bold">
@@ -30,7 +34,7 @@ const Header = () => {
             <li><Link to="/Contact" className="mx-4">Contact Us</Link></li> 
             <li><Link to="/About" className="mx-4">About Us</Link></li> 
             <li><Link to="/Cart" className="mx-4"><FontAwesomeIcon icon={faCartShopping} /> 
-            ({cartItems.length} Items)
+            ({cartItems.length} Items )
             </Link></li>
             <li><button className="mx-4 text-yellow-500" onClick={()=>{
               if(loginBtn==="LogIn")setloginBtn("Logout")
