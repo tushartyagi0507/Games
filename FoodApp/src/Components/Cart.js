@@ -13,7 +13,7 @@ const handlerClear = ()=>{
 }
 
     return (
-        <div className="text-center ">
+        <div className="text-center h-screen">
             <h1 className="font-bold text-2xl my-8">Cart</h1>
             <div className="w-6/12 mx-auto">
             {List.map((list)=>{
